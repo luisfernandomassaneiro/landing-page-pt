@@ -1,0 +1,67 @@
+<!--
+  Features: alternating (zigzag texto/imagem)
+  Uso: 2-4 features com screenshots detalhados. Cada bloco é uma feature "hero" própria.
+-->
+<section class="py-16 md:py-24" aria-labelledby="features-title">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="max-w-3xl mx-auto text-center mb-20">
+      <h2 id="features-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+        {{TITLE}}
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">{{SUBTITLE}}</p>
+    </div>
+
+    <div class="space-y-24 md:space-y-32">
+
+      <!-- Feature 1: texto esquerda / imagem direita -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">{{F1_EYEBROW}}</p>
+          <h3 class="mt-3 text-2xl md:text-3xl font-bold text-slate-900">{{F1_TITLE}}</h3>
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">{{F1_DESC}}</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-slate-700">{{F1_BULLET_1}}</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-slate-700">{{F1_BULLET_2}}</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-slate-700">{{F1_BULLET_3}}</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="{{F1_IMG}}" width="800" height="600" alt="{{F1_ALT}}" loading="lazy" class="rounded-2xl shadow-xl ring-1 ring-slate-900/5">
+        </div>
+      </div>
+
+      <!-- Feature 2: imagem esquerda / texto direita -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="md:order-2">
+          <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">{{F2_EYEBROW}}</p>
+          <h3 class="mt-3 text-2xl md:text-3xl font-bold text-slate-900">{{F2_TITLE}}</h3>
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">{{F2_DESC}}</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-slate-700">{{F2_BULLET_1}}</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span class="text-slate-700">{{F2_BULLET_2}}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="md:order-1">
+          <img src="{{F2_IMG}}" width="800" height="600" alt="{{F2_ALT}}" loading="lazy" class="rounded-2xl shadow-xl ring-1 ring-slate-900/5">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<!--
+  CTA final: título + botão + garantia
+  Uso: penúltima seção (antes do footer). Reforço final.
+-->
+<section class="py-20 md:py-28 bg-slate-900 text-white" aria-labelledby="final-cta-title">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <h2 id="final-cta-title" class="text-3xl md:text-5xl font-bold tracking-tight">
+      {{TITLE}}
+    </h2>
+    <p class="mt-6 text-lg md:text-xl text-slate-300 leading-relaxed">
+      {{SUBTITLE}}
+    </p>
+
+    <div class="mt-10">
+      <a
+        href="{{CTA_HREF}}"
+        class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-slate-900 font-bold text-lg hover:bg-slate-100 transition shadow-xl"
+      >
+        {{CTA_TEXT}}
+      </a>
+    </div>
+
+    <p class="mt-6 text-sm text-slate-400">
+      {{GUARANTEE}} <!-- Ex: "7 dias de garantia · Cancele quando quiser · Sem cartão para começar" -->
+    </p>
+
+  </div>
+</section>

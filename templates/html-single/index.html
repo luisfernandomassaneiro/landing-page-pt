@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta -->
+  <title>{{TITLE_30_A_60_CHARS}}</title>
+  <meta name="description" content="{{DESCRIPTION_120_A_155_CHARS}}">
+  <link rel="canonical" href="https://{{DOMAIN}}/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://{{DOMAIN}}/">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:image" content="https://{{DOMAIN}}/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="{{BRAND}}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://{{DOMAIN}}/og.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0F172A">
+
+  <!-- Preconnect / Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="/hero.webp" fetchpriority="high">
+
+  <!-- Font (Inter — trocar por par escolhido em design-tokens.md) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--
+    Tailwind CDN — APENAS PARA PROTOTIPAGEM.
+    Em produção, compile:
+      npx tailwindcss -i input.css -o output.css --minify
+    e substitua este script por <link rel="stylesheet" href="/output.css">
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    /* Skip link acessibilidade */
+    .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
+    .skip-link:focus { top: 0; }
+  </style>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{BRAND}}",
+    "url": "https://{{DOMAIN}}",
+    "logo": "https://{{DOMAIN}}/logo.png"
+  }
+  </script>
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- ========== NAV ========== -->
+  <header class="border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-bold text-lg text-slate-900">{{BRAND}}</a>
+      <a href="#pricing" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition">
+        {{NAV_CTA}}
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!--
+      ========== SEÇÕES ==========
+      Copie blocos de ~/.claude/skills/landing-page-pt/sections/*/
+      Ordem recomendada em references/anatomy.md
+    -->
+
+    <!-- HERO — cole aqui um bloco de sections/hero/ -->
+
+    <!-- SOCIAL PROOF — sections/social-proof/ -->
+
+    <!-- FEATURES — sections/features/ -->
+
+    <!-- HOW IT WORKS (opcional) -->
+
+    <!-- TESTIMONIALS — sections/testimonials/ -->
+
+    <!-- PRICING (se aplicável) — sections/pricing/ -->
+
+    <!-- FAQ — sections/faq/ -->
+
+    <!-- CTA FINAL — sections/cta/ -->
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="border-t border-slate-200 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-600">
+      <div>© 2026 {{BRAND_LEGAL}} — CNPJ {{CNPJ}}</div>
+      <div class="flex gap-4">
+        <a href="/privacidade" class="hover:text-slate-900">Privacidade</a>
+        <a href="/termos" class="hover:text-slate-900">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LGPD BANNER ==========
+       Cole aqui o snippet completo de references/lgpd-consent.md
+       Analytics/Pixel só disparam após aceite.
+  -->
+
+  <!-- ========== JSON-LD FAQPage — se tiver seção FAQ ==========
+       Ver references/seo-checklist.md para template completo.
+  -->
+</body>
+</html>

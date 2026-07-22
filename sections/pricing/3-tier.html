@@ -1,0 +1,81 @@
+<!--
+  Pricing: 3 tiers com destaque no meio
+  Uso: SaaS típico. O tier "popular" fica no meio, com destaque visual.
+-->
+<section class="py-16 md:py-24 bg-slate-50" aria-labelledby="pricing-title">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2 id="pricing-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+        {{TITLE}}
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">{{SUBTITLE}}</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+
+      <!-- Tier 1: básico -->
+      <div class="rounded-2xl bg-white border border-slate-200 p-8 flex flex-col">
+        <h3 class="text-lg font-semibold text-slate-900">{{TIER_1_NAME}}</h3>
+        <p class="mt-2 text-sm text-slate-600">{{TIER_1_TAG}}</p>
+        <div class="mt-6">
+          <span class="text-4xl font-bold text-slate-900">R$ {{TIER_1_PRICE}}</span>
+          <span class="text-slate-500">/mês</span>
+        </div>
+        <ul class="mt-8 space-y-3 flex-1">
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_1_F1}}</li>
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_1_F2}}</li>
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_1_F3}}</li>
+        </ul>
+        <a href="{{TIER_1_CTA_HREF}}" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
+          {{TIER_1_CTA}}
+        </a>
+      </div>
+
+      <!-- Tier 2: destaque (popular) -->
+      <div class="rounded-2xl bg-slate-900 text-white p-8 flex flex-col relative shadow-2xl ring-2 ring-slate-900">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+          Mais popular
+        </div>
+        <h3 class="text-lg font-semibold">{{TIER_2_NAME}}</h3>
+        <p class="mt-2 text-sm text-slate-400">{{TIER_2_TAG}}</p>
+        <div class="mt-6">
+          <span class="text-4xl font-bold">R$ {{TIER_2_PRICE}}</span>
+          <span class="text-slate-400">/mês</span>
+        </div>
+        <ul class="mt-8 space-y-3 flex-1">
+          <li class="flex gap-3"><span class="text-emerald-400">✓</span> {{TIER_2_F1}}</li>
+          <li class="flex gap-3"><span class="text-emerald-400">✓</span> {{TIER_2_F2}}</li>
+          <li class="flex gap-3"><span class="text-emerald-400">✓</span> {{TIER_2_F3}}</li>
+          <li class="flex gap-3"><span class="text-emerald-400">✓</span> {{TIER_2_F4}}</li>
+          <li class="flex gap-3"><span class="text-emerald-400">✓</span> {{TIER_2_F5}}</li>
+        </ul>
+        <a href="{{TIER_2_CTA_HREF}}" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-lg bg-white text-slate-900 font-semibold hover:bg-slate-100 transition">
+          {{TIER_2_CTA}}
+        </a>
+      </div>
+
+      <!-- Tier 3: enterprise -->
+      <div class="rounded-2xl bg-white border border-slate-200 p-8 flex flex-col">
+        <h3 class="text-lg font-semibold text-slate-900">{{TIER_3_NAME}}</h3>
+        <p class="mt-2 text-sm text-slate-600">{{TIER_3_TAG}}</p>
+        <div class="mt-6">
+          <span class="text-4xl font-bold text-slate-900">{{TIER_3_PRICE}}</span>
+        </div>
+        <ul class="mt-8 space-y-3 flex-1">
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_3_F1}}</li>
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_3_F2}}</li>
+          <li class="flex gap-3 text-slate-700"><span class="text-emerald-600">✓</span> {{TIER_3_F3}}</li>
+        </ul>
+        <a href="{{TIER_3_CTA_HREF}}" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
+          {{TIER_3_CTA}}
+        </a>
+      </div>
+
+    </div>
+
+    <p class="mt-8 text-center text-sm text-slate-500">
+      {{PRICING_NOTE}} <!-- Ex: "Todos os planos aceitam Pix, boleto e cartão em até 12x." -->
+    </p>
+  </div>
+</section>

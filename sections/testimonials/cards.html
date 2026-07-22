@@ -1,0 +1,68 @@
+<!--
+  Testimonials: grid de cards
+  Uso: quando tem 3-6 depoimentos textuais com foto+cargo+empresa.
+  IMPORTANTE: nunca invente. Se não tem, use [PLACEHOLDER] visível.
+-->
+<section class="py-16 md:py-24 bg-slate-50" aria-labelledby="testimonials-title">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2 id="testimonials-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+        {{TITLE}}
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">{{SUBTITLE}}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="rounded-2xl bg-white p-6 border border-slate-200">
+        <div class="flex gap-1 text-amber-500 mb-4">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <blockquote class="text-slate-700 leading-relaxed">
+          "{{T1_QUOTE}}"
+        </blockquote>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="{{T1_AVATAR}}" width="40" height="40" alt="{{T1_NAME}}" class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold text-slate-900 text-sm">{{T1_NAME}}</div>
+            <div class="text-xs text-slate-500">{{T1_ROLE}} · {{T1_COMPANY}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white p-6 border border-slate-200">
+        <div class="flex gap-1 text-amber-500 mb-4">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <blockquote class="text-slate-700 leading-relaxed">
+          "{{T2_QUOTE}}"
+        </blockquote>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="{{T2_AVATAR}}" width="40" height="40" alt="{{T2_NAME}}" class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold text-slate-900 text-sm">{{T2_NAME}}</div>
+            <div class="text-xs text-slate-500">{{T2_ROLE}} · {{T2_COMPANY}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white p-6 border border-slate-200">
+        <div class="flex gap-1 text-amber-500 mb-4">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <blockquote class="text-slate-700 leading-relaxed">
+          "{{T3_QUOTE}}"
+        </blockquote>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="{{T3_AVATAR}}" width="40" height="40" alt="{{T3_NAME}}" class="w-10 h-10 rounded-full">
+          <div>
+            <div class="font-semibold text-slate-900 text-sm">{{T3_NAME}}</div>
+            <div class="text-xs text-slate-500">{{T3_ROLE}} · {{T3_COMPANY}}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

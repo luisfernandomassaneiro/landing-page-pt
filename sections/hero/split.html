@@ -1,0 +1,58 @@
+<!--
+  Hero: Split (texto à esquerda, imagem à direita)
+  Uso: SaaS, produto com screenshot forte, B2B em geral.
+-->
+<section class="relative overflow-hidden" aria-labelledby="hero-title">
+  <div class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <div>
+        <p class="inline-flex items-center gap-2 text-sm font-medium text-slate-600 bg-slate-100 rounded-full px-3 py-1 mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          {{PILL_TEXT}}
+        </p>
+
+        <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+          {{HEADLINE}}
+        </h1>
+
+        <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
+          {{SUBHEAD}}
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a
+            href="{{CTA_PRIMARY_HREF}}"
+            class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition"
+          >
+            {{CTA_PRIMARY}}
+          </a>
+          <a
+            href="{{CTA_SECONDARY_HREF}}"
+            class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition"
+          >
+            {{CTA_SECONDARY}}
+          </a>
+        </div>
+
+        <p class="mt-4 text-sm text-slate-500">
+          {{MICRO_PROOF}} <!-- Ex: "Grátis por 14 dias — sem cartão" ou "Junte-se a 3.400+ empresas" -->
+        </p>
+      </div>
+
+      <div class="relative">
+        <img
+          src="{{HERO_IMAGE}}"
+          srcset="{{HERO_IMAGE_400}} 400w, {{HERO_IMAGE_800}} 800w, {{HERO_IMAGE_1600}} 1600w"
+          sizes="(max-width: 768px) 100vw, 600px"
+          width="800"
+          height="600"
+          alt="{{HERO_ALT}}"
+          fetchpriority="high"
+          class="rounded-2xl shadow-2xl ring-1 ring-slate-900/5"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>

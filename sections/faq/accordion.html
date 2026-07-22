@@ -1,0 +1,80 @@
+<!--
+  FAQ: accordion nativo com <details>
+  Uso: sempre. Formato mais leve e acessível (zero JS).
+  Lembre de gerar também o JSON-LD FAQPage em seo-checklist.md.
+-->
+<section class="py-16 md:py-24" aria-labelledby="faq-title">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <div class="text-center mb-12">
+      <h2 id="faq-title" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+        {{TITLE}}
+      </h2>
+      <p class="mt-4 text-lg text-slate-600">{{SUBTITLE}}</p>
+    </div>
+
+    <div class="space-y-3">
+
+      <details class="group rounded-xl border border-slate-200 open:bg-slate-50 open:border-slate-300 transition">
+        <summary class="cursor-pointer list-none flex items-center justify-between p-5 font-semibold text-slate-900">
+          <span>{{Q1}}</span>
+          <svg class="w-5 h-5 text-slate-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-slate-700 leading-relaxed">
+          {{A1}}
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-slate-200 open:bg-slate-50 open:border-slate-300 transition">
+        <summary class="cursor-pointer list-none flex items-center justify-between p-5 font-semibold text-slate-900">
+          <span>{{Q2}}</span>
+          <svg class="w-5 h-5 text-slate-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-slate-700 leading-relaxed">
+          {{A2}}
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-slate-200 open:bg-slate-50 open:border-slate-300 transition">
+        <summary class="cursor-pointer list-none flex items-center justify-between p-5 font-semibold text-slate-900">
+          <span>{{Q3}}</span>
+          <svg class="w-5 h-5 text-slate-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-slate-700 leading-relaxed">
+          {{A3}}
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-slate-200 open:bg-slate-50 open:border-slate-300 transition">
+        <summary class="cursor-pointer list-none flex items-center justify-between p-5 font-semibold text-slate-900">
+          <span>{{Q4}}</span>
+          <svg class="w-5 h-5 text-slate-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-slate-700 leading-relaxed">
+          {{A4}}
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-slate-200 open:bg-slate-50 open:border-slate-300 transition">
+        <summary class="cursor-pointer list-none flex items-center justify-between p-5 font-semibold text-slate-900">
+          <span>{{Q5}}</span>
+          <svg class="w-5 h-5 text-slate-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-slate-700 leading-relaxed">
+          {{A5}}
+        </div>
+      </details>
+
+    </div>
+
+    <div class="mt-10 text-center">
+      <p class="text-slate-600">
+        Ainda tem dúvida?
+        <a href="{{CONTACT_HREF}}" class="text-slate-900 font-semibold underline hover:text-slate-700">
+          Fale com a gente no WhatsApp
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>

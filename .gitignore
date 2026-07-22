@@ -1,0 +1,16 @@
+# Auditoria local
+audit-report/
+*.report.html
+*.report.json
+
+# macOS
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Node / deps (caso alguém adicione tooling futuramente)
+node_modules/
+npm-debug.log*

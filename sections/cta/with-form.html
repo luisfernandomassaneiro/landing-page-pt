@@ -1,0 +1,55 @@
+<!--
+  CTA final: título + formulário de captura de e-mail
+  Uso: lead magnet, newsletter, waitlist.
+  Requer integração — ver integrations/formspree.md ou resend.md.
+-->
+<section class="py-20 md:py-28 bg-slate-50" aria-labelledby="final-cta-title">
+  <div class="max-w-2xl mx-auto px-6 text-center">
+
+    <h2 id="final-cta-title" class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+      {{TITLE}}
+    </h2>
+    <p class="mt-4 text-lg text-slate-600">
+      {{SUBTITLE}}
+    </p>
+
+    <form
+      action="{{FORM_ACTION}}"
+      method="POST"
+      class="mt-10 space-y-4"
+      novalidate
+    >
+      <div class="flex flex-col sm:flex-row gap-3">
+        <label class="sr-only" for="cta-email">Seu e-mail</label>
+        <input
+          id="cta-email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="seu@email.com"
+          class="flex-1 px-4 py-3.5 rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900"
+        >
+        <button
+          type="submit"
+          class="px-6 py-3.5 rounded-lg bg-slate-900 text-white font-semibold hover:bg-slate-800 transition"
+        >
+          {{CTA_TEXT}}
+        </button>
+      </div>
+
+      <label class="flex items-start gap-2 text-sm text-slate-600 text-left">
+        <input type="checkbox" name="lgpd_consent" required class="mt-1 rounded border-slate-300">
+        <span>
+          Concordo com a <a href="/privacidade" class="underline hover:text-slate-900">Política de Privacidade</a>
+          e autorizo o envio de comunicações.
+        </span>
+      </label>
+    </form>
+
+    <p class="mt-6 text-sm text-slate-500">
+      {{TRUST_LINE}} <!-- Ex: "Sem spam. Cancele com 1 clique." -->
+    </p>
+
+  </div>
+</section>
